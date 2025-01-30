@@ -21,7 +21,7 @@
 
 ### Native Luncher android studio 
 - 1. sudo nano /usr/share/applications/android-studio.desktop
-- [2. Desktop Entry]
+- 2. Desktop Entry
 Version=1.0
 Name=Android Studio
 Comment=Android Studio IDE
@@ -32,5 +32,5 @@ Type=Application
 Categories=Development;IDE;
 - 3. Save and close the file (CTRL + X, then Y, then Enter).
 ### Check adb devices
-- <img src="screenshots/adbdevices.png" width="300">
+- <img src="screenshots/adbdevices.png" width="800">
 
