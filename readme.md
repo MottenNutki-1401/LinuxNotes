@@ -31,6 +31,35 @@ Terminal=false
 Type=Application
 Categories=Development;IDE;
 - 3. Save and close the file (CTRL + X, then Y, then Enter).
+
+### Connecting to adb (Android Debug bridge)
+- sudo apt install adb
+- sudo usermod -aG plugdev $USER  (then restart computer)
+- still no permisiion?
+- sudo nano /etc/udev/rules.d/51-android.rules  
+- This (up) is nano
+- SUBSYSTEM=="usb", ATTR{idVendor}=="18d1", MODE="0666", GROUP="plugdev"            
+- 
+- Save and exit (in nano, press Ctrl + O to save and Ctrl + X to exit).
+- sudo usermod -aG plugdev $USER
+- adb devices
+- lsusb   (check device id)
+- Look for something like this: Bus 001 Device 002: ID 18d1:4ee7 Google Inc.
+- insert to nano
+### Reloading Udev rules
+- sudo udevadm control --reload-rules
+- sudo udevadm trigger
+### Restart Adb Server
+- adb kill-server
+- adb start-server
+-  Unplug & Replug Your Device Physically disconnect the USB cable from your phone. Reconnect it after a few seconds.
+
+
+
 ### Check adb devices
 - <img src="screenshots/adbdevices.png" width="800">
+### Reload Udev Rules
+- sudo udevadm control --reload-rules
+- sudo udevadm trigger
+
 
