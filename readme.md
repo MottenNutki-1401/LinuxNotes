@@ -95,6 +95,7 @@ If the login page is blank when you open Packet Tracer, run this command:
 
 For linux mint XFCE (my friend encountered many issues in installing packettracer here)
 - error libgl1-mesa-glx
+  
   Step 1: Add the Required Ubuntu Repository
 
  - add the Ubuntu 22.04 (Jammy) repository manually:
