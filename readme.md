@@ -1,4 +1,6 @@
-- Important Note:  I played around with these commands on Linux Pop!_OS, but they should work on other Linux versions too! 🐧✨ If something refuses to cooperate (a.k.a. doesn’t work 😭), you can always find alternative ways~ 💡 Hope this helps, and please don’t curse me if it doesn’t! (I tried my best XD! 😆💕)  I’m still improving this, so it’s a work in progress😸
+ Important Note:  I played around with these commands on Linux Pop!_OS, but they should work on other Linux versions too! 🐧✨ If something refuses to cooperate (a.k.a. doesn’t work 😭), you can always find alternative ways~ 💡 Hope this helps, and please don’t curse me if it doesn’t! (I tried my best XD! 😆💕)  I’m still improving this, so it’s a work in progress😸
+
+ 
 ## Bash terminal commands
 ### cd ~/Downloads
 
