@@ -84,7 +84,7 @@ Categories=Development;IDE;
 3. Install the .deb package using:
    - sudo dpkg -i Packet_Tracer822_amd64_signed.deb (yourfile name)
    If there are missing dependencies, fix them with:
-  - sudo apt --fix-broken install
+      - sudo apt --fix-broken install
 
 4. Connect your PacketTracer to your cisco account (or use it in guest mode)
 5. Fix the Login Issue (Blank Page)
