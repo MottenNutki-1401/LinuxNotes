@@ -66,3 +66,11 @@ Categories=Development;IDE;
 - sudo udevadm trigger
 
 
+
+### Installing Packet Tracer in Linux 
+1. Download Cisco Packet Tracer
+
+    Go to NetAcad and log in.
+    Download Packet Tracer 8.2.2 Ubuntu 64bit.
+    The file should be named something like:
+
