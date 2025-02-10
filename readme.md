@@ -93,4 +93,31 @@ If the login page is blank when you open Packet Tracer, run this command:
 - QTWEBENGINE_DISABLE_SANDBOX=1 packettracer
   This disables the sandboxing feature in Qt WebEngine, allowing the login page to load properly. Now You're Ready! 🎉
 
+For linux mint XFCE (my friend encountered many issues in installing packettracer here)
+- error libgl1-mesa-glx
+  Step 1: Add the Required Ubuntu Repository
+
+ - add the Ubuntu 22.04 (Jammy) repository manually:
+ - echo "deb http://archive.ubuntu.com/ubuntu jammy main universe" | sudo tee /etc/apt/sources.list.d/jammy.list
+
+update package list 
+- sudo apt update
+
+Step 2: Install the Missing Dependencies
+
+Now install libgl1-mesa-glx from the added repository:
+- sudo apt install libgl1-mesa-glx libxcb-xinerama0 libxcb-xinerama0-dev
+if it doesn't work try:
+- sudo apt install libgl1
+
+Step 3: Install Packet Tracer Again
+
+Once dependencies are installed, reinstall Packet Tracer:
+- sudo dpkg -i CiscoPacketTracer822_amd64_signed.deb
+
+then fix any broken dependency 
+- sudo apt --fix-broken install
+
+Step 4 : All set Now run packet tracer 🥳
+
 
