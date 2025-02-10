@@ -72,7 +72,7 @@ Categories=Development;IDE;
 
     Go to NetAcad and log in.
     Download Packet Tracer 8.2.2 Ubuntu 64bit.
-   -Packet_Tracer822_amd64_signed.deb
+   - Packet_Tracer822_amd64_signed.deb
 
    
 2. Install Packet Tracer
