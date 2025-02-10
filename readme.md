@@ -72,5 +72,25 @@ Categories=Development;IDE;
 
     Go to NetAcad and log in.
     Download Packet Tracer 8.2.2 Ubuntu 64bit.
-    The file should be named something like:
+   -Packet_Tracer822_amd64_signed.deb
+
+   
+2. Install Packet Tracer
+
+    Open a terminal (Ctrl + Alt + T) and go to the Downloads folder:
+   - cd ~/Downloads
+  
+   
+3. Install the .deb package using:
+   - sudo dpkg -i Packet_Tracer822_amd64_signed.deb (yourfile name)
+   If there are missing dependencies, fix them with:
+  - sudo apt --fix-broken install
+
+4. Connect your PacketTracer to your cisco account (or use it in guest mode)
+5. Fix the Login Issue (Blank Page)
+
+If the login page is blank when you open Packet Tracer, run this command:
+- QTWEBENGINE_DISABLE_SANDBOX=1 packettracer
+  This disables the sandboxing feature in Qt WebEngine, allowing the login page to load properly. Now You're Ready! 🎉
+
 
