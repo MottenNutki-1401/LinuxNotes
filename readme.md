@@ -19,6 +19,23 @@
 3. Configure git with Github (you can do this in your vscode terminal)
    - git config --global user.name "ReplaceThisTextWithYourGithubUsername"
    - git config --global user.email "ReplaceThisTextWithYourGithubEmail"
+
+4. Generate SSH Key (so you dont have to login everytime)
+   - ssh-keygen -t rsa -b 4096 -C "ReplaceThistextWithYourGitEmail"
+   - Press enter to save it in default directory (~/.ssh/id_rsa)
+   - Just type enter to every promts to set default
+
+5. Add the key to SSH agent:
+   - eval "$(ssh-agent -s)"
+   - ssh-add ~/.ssh/id_rsa
+
+6. After typing this command copy what youe got to github
+   - cat ~/.ssh/id_rsa.pub
+7. Go to Github>Settings>SSH an GPG key and copy it
+8. Test your connection
+   - if you get something that looks like an error don't panic
+   - as long as you read "Hi (your username)! You've successfully authenticated, but GitHub does not provide shell access.
+   - then you're good to go!
 ### Git Terminal commands 
 ### git pull origin main --rebase
 - used to fetch changes from the remote repository and reapply your local commits on top of those changes, rather than merging them
