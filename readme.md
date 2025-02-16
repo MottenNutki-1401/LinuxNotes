@@ -6,7 +6,19 @@
 
 
 
+### Connecting your VSCODE to your git account
 
+1. Install Git (if not installed, run this on your terminal)
+
+   - sudo apt update
+   - sudo apt install git -y
+
+2. Verify your git
+   - git --version
+
+3. Configure git with Github (you can do this in your vscode terminal)
+   - git config --global user.name "ReplaceThisTextWithYourGithubUsername"
+   - git config --global user.email "ReplaceThisTextWithYourGithubEmail"
 ### Git Terminal commands 
 ### git pull origin main --rebase
 - used to fetch changes from the remote repository and reapply your local commits on top of those changes, rather than merging them
